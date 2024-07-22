@@ -3,8 +3,8 @@ MPICC?=mpic++
 
 all::${EXECS}
 
-output.out: Hello.cpp
-	${MPICC} -o output.out Hello.cpp
+output.out: send_recv_msg.cpp
+	${MPICC} -o output.out send_recv_msg.cpp
 
 clean:
 	rm ${EXECS}
